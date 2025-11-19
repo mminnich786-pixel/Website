@@ -8,25 +8,15 @@
     <body class="page-home">
 </head>
   <nav>
-  <div class="logo">
-    <a href="index.html">
-      <img src="Logo.png" alt="The Bedroom Producer Bible Logo" />
-    </a>
-  </div>
+  <div id="header-placeholder"></div>
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+</script>
 
-  <body>
-    <header>
-      <nav>
-        <ul class="nav-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="news.html">News</a></li>
-    <li><a href="reviews.html">Reviews</a></li>
-    <li><a href="tutorials.html">Tutorials</a></li>
-    <li><a href="breakdowns.html">Breakdowns</a></li>
-    <li><a href="community.html">Community</a></li>
-        </ul>
-    </header>
-         </nav>
  
 
     <main class="home-grid">
