@@ -61,8 +61,13 @@ nav {
   color: #a00000;
   font-size: 1.25rem;
   margin-bottom: 16px;
+  border-top: 2px solid #a00000;
   border-bottom: 2px solid #a00000;
-  padding-bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
 
 }
 .panel ul {
@@ -129,11 +134,11 @@ footer {
 .footer-links a:hover { text-decoration: underline; }
 
 
-.page-news    { background: #fff5f5; }
-.page-reviews { background: #f7fff7; }
-.page-tutorials { background: #f7fbff; }
-.page-breakdowns { background: #fbf7ff; }
-.page-community { background: #f7fff9; }
+.page-news    { background: #f5f0e6; }
+.page-reviews { background: #f5f0e6; }
+.page-tutorials { background: #f5f0e6; }
+.page-breakdowns { background: #f5f0e6; }
+.page-community { background: #f5f0e6; }
 
 
 @media (max-width: 900px) {
