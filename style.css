@@ -25,8 +25,16 @@ nav {
   border-bottom: var(--border);
   background: var(--bg);
 }
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .logo img {
-  height: 80px;
+  height: 40px;
   width: auto;
   display: block;
 }
