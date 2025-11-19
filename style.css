@@ -45,14 +45,14 @@ nav {
  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  padding: 40px 24px;
+  padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
  
 }
 
 .panel {
- background: #ffffff;
+ background: #fff;
   border: 2px solid #a00000;
   padding: 20px;
 
@@ -65,6 +65,25 @@ nav {
   padding-bottom: 10px;
 
 }
+.panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.panel li {
+  margin-bottom: 10px;
+}
+
+.panel a {
+  color: #a00000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.panel a:hover {
+  text-decoration: underline;
+}
+
 
 .link-list {
   list-style: none;
