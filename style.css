@@ -25,7 +25,7 @@ nav {
   border-bottom: var(--border);
   background: var(--bg);
 }
-.logo img {
+.logo png {
   height: 60px;
   width: auto;
   display: block;
