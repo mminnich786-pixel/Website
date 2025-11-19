@@ -2,7 +2,7 @@
   --bg: #f5f0e6;    
   --red: #a00000;   
   --text: #4a0000;  
-  --panel-bg: #ffffff;
+  --panel-bg: #f5f0e6;
   --border: 2px solid var(--red);
 }
 
@@ -52,7 +52,7 @@ nav {
 }
 
 .panel {
- background: #fff;
+ background: #f5f0e6;
   border: 2px solid #a00000;
   padding: 20px;
 
