@@ -25,6 +25,13 @@ nav {
   border-bottom: var(--border);
   background: var(--bg);
 }
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+
 .nav-menu {
   display: flex;
   gap: 28px;
