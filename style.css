@@ -61,10 +61,9 @@ nav {
   color: #a00000;
   font-size: 1.25rem;
   margin-bottom: 16px;
-  border-top: 2px solid #a00000;
   border-bottom: 2px solid #a00000;
-  padding: 10px 0;
-  text-align: center;
+  padding-bottom: 10px;
+
 }
 
 
