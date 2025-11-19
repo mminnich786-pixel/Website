@@ -1,20 +1,90 @@
-body {
+* {
 	margin: 0;
-	font-family: 'Michroma', sans-serif;
-	background-color: #E9E7DA;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', sans-serif;
+	color: #40000;
+	background-color: #f5f0e6;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	padding: 20px;
+	background-color: #f5f0e6;
+	border-bottom: 2px solid #a00;
+	list-style: none;
+}
+
+.nav-menu a {
+	text-decoration: none;
+	color: #a00;
+	font-weight: bold;
+	font-size: 1.1em
+}
+
+.nav-menu a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	margin-top: 60px;
+	padding: 20px;
+	text-align: center;
+	border-top: 2px solid #a00;
+	background-color: #f5f0e6;
+}
+
+.social-icons span {
+	margin: 0 10px;
+	font-weight: bold;
 	color: #a00;
 }
 
-header {
-	background-color: #E9E7DA;
-	border-bottom: 2px solid #a00;
-	padding: 10px 20px;
+.footer-links a {
+	color: #a00;
+	text-decoration: none;
+	margin: 0 5px;
 }
 
-.nav menu {
-	list-style: none;
-	display: flex;
-	gap: 20px;
-	padding: 0;
-	margin: 0;
+.page-home main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 40px;
+	padding: 40px;
+}
+
+.page-home h1,
+.page-home h2 {
+	color: #a00;
+	margin-bottom: 20px;
+}
+
+.page-home section {
+	border: 2px solid #a00;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.page-news {
+	background-color: #fff0f0;
+}
+.page-reviews {
+  background-color: #f0fff5;
+}
+
+.page-tutorials {
+  background-color: #f0f5ff;
+}
+
+.page-breakdowns {
+  background-color: #f5f0ff;
+}
+
+.page-community {
+  background-color: #f5fff0;
 }
