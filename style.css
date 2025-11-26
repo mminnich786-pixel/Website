@@ -158,9 +158,11 @@ footer {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 40px;
+    border-bottom: 2px soild #a0000;
   }
   .logo {
     position: static;
@@ -169,19 +171,27 @@ footer {
   }
 
   .logo img {
-    height: 100px;
+    height: 60px;
+    width: auto;
+    display: block;
+    margin-right: 20px;
     max-width: 80%;
   }
-}
   .nav-menu {
-    flex-direction: column;
-    gap: 15px;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     width: 100%;
   }
-  .nav-menu {
-    font-size: 2rem;
+  .nav-menu a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #a00000
+    font-weight: bold;
   }
-}
+
   
 
 
