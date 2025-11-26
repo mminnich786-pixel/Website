@@ -158,41 +158,33 @@ footer {
 
 @media (max-width: 768px) {
   nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px 40px;
-    border-bottom: 2px soild #a0000;
+    flex-direction: column;       
+    align-items: flex-start;      
+    padding: 15px 20px;
   }
+
   .logo {
-    position: static;
+    position: static;             
     transform: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .logo img {
-    height: 60px;
-    width: auto;
-    display: block;
-    margin-right: 20px;
-    max-width: 80%;
-  }
-  .nav-menu {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .nav-menu a {
-    font-size: 1.1em;
-    text-decoration: none;
-    color: #a00000
-    font-weight: bold;
+    height: 80px;                 
+    max-width: 100%;              
   }
 
-  
+  .nav-menu {
+    flex-direction: column;       
+    gap: 20px;
+    width: 100%;
+  }
+
+  .nav-menu a {
+    font-size: 1.2rem;            
+  }
+}
+
 
 
 
