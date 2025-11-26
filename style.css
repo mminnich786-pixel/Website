@@ -156,13 +156,31 @@ footer {
 .page-community { background: #f5f0e6; }
 
 
-@media (max-width: 900px) {
-  .page-home .home-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 24px 16px;
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  .logo {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  .nav-menu {
+    font-size: 1rem;
   }
 }
+  
 
 
 
