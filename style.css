@@ -40,6 +40,10 @@ nav {
   display: block;
 }
 
+header {
+  border-bottom: 2px solid #a00000
+}
+
 
 .nav-menu {
   display: flex;
