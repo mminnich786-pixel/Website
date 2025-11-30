@@ -1,29 +1,35 @@
 :root {
   --bg: #f5f0e6;    
-  --red: ##EA4314;   
-  --text: #4a0000;  
+  --red: #EA4314;   
+  --text-color: #000000; 
+  --accent-color: #a00000
   --panel-bg: #f5f0e6;
   --border: 2px solid var(--red);
 }
-
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #ff4d4d;
+}
 * { box-sizing: border-box; }
 html, body { height: 100%; }
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
   background: var(--bg);
   color: var(--red);
 }
-
+  
 
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 24px;
-  padding: 18px 20px;
+  padding: 20px 40px;
   border-bottom: var(--border);
-  background: var(--bg);
+  background-color: var(--bg);
 }
 
 .logo {
@@ -47,10 +53,10 @@ header {
 
 .nav-menu {
   display: flex;
-  gap: 28px;
+  gap: 30px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 .nav-menu a {
   color: var(--red);
@@ -121,6 +127,21 @@ header {
   font-weight: 600;
 }
 .link-list a:hover { text-decoration: underline; }
+
+#theme-toggle {
+  margin-left: auto;
+  padding: 8px 12px;
+  background: none;
+  border: 2px soild var(--accent-color);
+  border-radius: 5px;
+  color: var(--accent-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+#theme-toggle:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
 
 
 footer {
