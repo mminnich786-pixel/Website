@@ -33,6 +33,31 @@
     <h1>Join the Community</h1>
     
   </main>
+ <section id="account">
+    <h2>Create an Account</h2>
+    <form id="account-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+      <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+
+    <button type="submit">Sign Up</button>
+    </form>
+   <h2>Login</h2>
+  <form id="login-form">
+    <label for="login-username">Username:</label>
+    <input type="text" id="login-username" required />
+
+    <label for="login-password">Password:</label>
+    <input type="password" id="login-password" required />
+
+    <button type="submit">Login</button>
+  </form>
+
+  <div id="form-response"></div>
+</section>
 
   <footer>
     <div class="social-icons">
@@ -46,6 +71,56 @@
       <a href="#">Privacy</a>
     </div>
   </footer>
+ <script>
+const signupForm = document.getElementById("account-form");
+const loginForm = document.getElementById("login-form");
+const responseDiv = document.getElementById("form-response");
+
+   signupForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const username = document.getElementById("username").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+
+  if (!username || !email || !password) {
+    responseDiv.innerHTML = `<p style="color:red;">All fields are required.</p>`;
+    return;
+  }
+
+  const userData = { email, password };
+  localStorage.setItem(username, JSON.stringify(userData));
+
+  responseDiv.innerHTML = `<p>Account created for <strong>${username}</strong>.</p>`;
+  signupForm.reset();
+});
+
+   loginForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const username = document.getElementById("login-username").value.trim();
+  const password = document.getElementById("login-password").value.trim();
+
+  const storedData = localStorage.getItem(username);
+
+  if (!storedData) {
+    responseDiv.innerHTML = `<p style="color:red;">No account found for ${username}.</p>`;
+    return;
+  }
+
+  const parsedData = JSON.parse(storedData);
+
+  if (parsedData.password === password) {
+    responseDiv.innerHTML = `<p>Welcome back, <strong>${username}</strong>!</p>`;
+  } else {
+    responseDiv.innerHTML = `<p style="color:red;">Incorrect password.</p>`;
+  }
+
+  loginForm.reset();
+});
+</script>
+
+
 </body>
 </html>
 
