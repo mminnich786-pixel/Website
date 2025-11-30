@@ -129,7 +129,6 @@ header {
 .link-list a:hover { text-decoration: underline; }
 
 #theme-toggle {
-  margin-left: auto;
   padding: 8px 12px;
   background: none;
   border: 2px soild var(--accent-color);
