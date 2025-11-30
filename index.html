@@ -62,6 +62,29 @@
         <a href="#">Privacy</a>
       </div>
       </footer>
+    <script>
+  const toggle = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  if (localStorage.getItem("theme") == "dark) {
+      body.setAttribute("data-theme", "dark");
+       toggle.textContent = "☀️ Light Mode";
+  }
+   toggle.addEventListener("click", () => {
+    if (body.getAttribute("data-theme") === "dark") {
+      body.removeAttribute("data-theme");
+      localStorage.setItem("theme", "light");
+      toggle.textContent = "🌙 Dark Mode";
+    } else {
+      body.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      toggle.textContent = "☀️ Light Mode";
+    }
+  });
+</script>
+
+
+
   </body>
 </html>
 
